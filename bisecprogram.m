@@ -6,7 +6,7 @@ function x = bisecprogram(f, a, b, tol)
 
     dom = [-8:0.1:8]; % creamos vector
     plot(dom, f(dom)) %graficamos
-    grid. % agregamos grid
+    grid % agregamos grid
 
     c = f(a);  % evaluamos funcion
     x = (a+b)/2; % operacion principal 
@@ -28,4 +28,3 @@ function x = bisecprogram(f, a, b, tol)
     disp('Tolerancia alcanzada')
     T = table(viter', vaprox', verror','VariableName', {'Iteracion','Aproximacion', 'Error'})
 end
- 
