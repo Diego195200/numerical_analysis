@@ -25,6 +25,8 @@ function x = bisecprogram(f, a, b, tol)
         end  % fin condicional
         i = i + 1;
     end  % fin while
-    disp('Tolerancia alcanzada')
+    if (tol < error)
+        disp('Tolerancia alcanzada')
+    end
     T = table(viter', vaprox', verror','VariableName', {'Iteracion','Aproximacion', 'Error'})
 end
